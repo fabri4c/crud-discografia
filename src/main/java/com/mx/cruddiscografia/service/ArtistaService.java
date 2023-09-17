@@ -16,4 +16,6 @@ public interface ArtistaService {
 
 	List<Artista> listarArtistas();
 
+	Artista buscarArtistaPorId(int id);
+
 }

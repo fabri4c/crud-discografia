@@ -40,4 +40,9 @@ public class ArtistaServImp implements ArtistaService {
 		return artistaDAO.findAll(Sort.by(Sort.Direction.ASC, "artistaId"));
 	}
 
+	@Override
+	public Artista buscarArtistaPorId(int id) {
+		return artistaDAO.findById(id).orElse(null);
+	}
+
 }
