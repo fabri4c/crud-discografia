@@ -15,7 +15,7 @@ import com.mx.cruddiscografia.service.ArtistaService;
 
 @RestController
 @RequestMapping("/api/artista")
-@CrossOrigin
+@CrossOrigin(origins = "http://localhost:5173")
 public class ArtistaWS {
 
 	@Autowired
